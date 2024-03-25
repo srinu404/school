@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>School Management</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+    
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    
+        .shape {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+    
+        .shape:first-child {
+            top: 20%;
+            left: -10%;
+        }
+    
+        .shape:last-child {
+            bottom: -20%;
+            right: -10%;
+        }
+    
+        .form-container-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Added */
+            gap: 20px; /* Added gap between tables */
+        }
+    
+        .form-container {
+            flex: 1; /* Make both containers take equal width */
+            max-width: 400px; /* Limit maximum width of containers */
+            padding: 40px 20px; /* Adjusted padding for increased height */
+            margin: 20px; /* Added margin */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+    
+        .form-container form {
+            margin-bottom: 20px;
+        }
+    
+        .form-container h3 {
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+    
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            text-align: left;
+        }
+    
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    
+        .form-container button {
+            width: calc(100% - 40px);
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    
+        .signup-link {
+            text-align: center;
+        }
+    
+        .signup-link a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+    
+        .signup-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="form-container-wrapper">
+        <div class="form-container">
+            <form id="teachers-login" action="login.php" method="POST">
+                <h3>Teachers Login</h3>
+                <label for="teachers-username">Username</label>
+                <input type="text" placeholder="username" id="teachers-username" name="username">
+                <label for="teachers-password">Password</label>
+                <input type="password" placeholder="Password" id="teachers-password" name="password">
+                <button type="submit">Log In</button>
+                <a href="teacher_register.html">Register as Teacher</a>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <form id="admin-login" action="login.php" method="POST">
+                <h3>Admin Login</h3>
+                <label for="admin-username">Username</label>
+                <input type="text" placeholder="username" id="admin-username" name="username">
+                <label for="admin-password">Password</label>
+                <input type="password" placeholder="Password" id="admin-password" name="password">
+                <button type="submit">Log In</button>
+                <a href="admin_register.html">Register as Admin</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("admin-login").addEventListener("submit", function(event) {
+            event.preventDefault(); // prevent form submission
+            var username = document.getElementById("admin-username").value;
+            var password = document.getElementById("admin-password").value;
+    
+            // Directly check username and password
+            if (username === "1" && password === "1") {
+                window.location.href = "admin.php"; // Redirect to admin.php on successful login
+            } else {
+                alert("Invalid username or password");
+            }
+        });
+    </script>
+    
+</body>
+</html>

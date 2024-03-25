@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>Teacher Registration</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            top: 20%;
+            left: -10%;
+        }
+
+        .shape:last-child {
+            bottom: -20%;
+            right: -10%;
+        }
+
+        .form-container {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .form-container form {
+            margin-bottom: 20px;
+        }
+
+        .form-container h3 {
+            margin-bottom: 20px;
+            font-weight: 500;
+            color: #007bff; /* Header color */
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            text-align: left;
+            color: #444; /* Label color */
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="password"]:focus,
+        .form-container input[type="email"]:focus {
+            border-color: #007bff; /* Focus color */
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .signup-link a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .signup-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="form-container">
+        <form id="teachers-register" action="register.php" method="post">
+            <h3>Teacher Registration</h3>
+            <label for="teachers-register-username">Username</label>
+            <input type="text" placeholder="Username" id="teachers-register-username" name="username" required>
+            <label for="teachers-register-email">Email</label>
+            <input type="email" placeholder="Email" id="teachers-register-email" name="email" required>
+            <label for="teachers-register-password">Password</label>
+            <input type="password" placeholder="Password" id="teachers-register-password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="signup-link">
+            <span>Already have an account? <a href="index.html">Login</a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

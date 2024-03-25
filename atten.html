@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Attendance Data</title>
+    <style>
+        /* Your updated CSS goes here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto; /* Increased top margin for better centering */
+            background: #ffffff;
+            padding: 30px; /* Increased padding for better spacing */
+            border-radius: 10px; /* Increased border-radius for smoother corners */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased box shadow for depth */
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: calc(100% - 20px); /* Adjusted width for better spacing */
+            padding: 10px; /* Increased padding for better input area */
+            margin: 10px 0; /* Increased margin for better separation */
+            display: block; /* Changed to block for better alignment */
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Added transition for smoother hover effect */
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; /* Increased top margin for better separation */
+        }
+
+        .btn-group input[type="button"] {
+            width: 48%; /* Adjusted width to fit two buttons without overflowing */
+        }
+    </style>
+</head>
+<body>
+    <h2>Insert Attendance Data</h2>
+    <form action="atten.php" method="POST">
+
+        <label for="class_id">Class ID:</label>
+        <input type="text" id="class_id" name="class_id" required><br><br>
+        
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+        
+        <label for="daily_date">Date:</label>
+        <input type="date" id="daily_date" name="daily_date" required><br><br>
+        
+        <label for="status">Status:</label>
+        <select name="status" id="status" required>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+
+        <div class="btn-group">
+            <input type="button" value="Cancel" onclick="window.location.href='teacher.php';">
+            <input type="button" value="See Attendance" onclick="window.location.href='seeatten.php';">
+        </div>
+    </form>
+</body>
+</html>

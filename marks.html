@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Student Marks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .btn-group input[type="button"] {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Student Marks</h2>
+        <form action="marks.php" method="post">
+
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id">
+            
+            <label for="class_id">Class ID:</label>
+            <input type="text" id="class_id" name="class_id">
+            
+            <label for="kannada">Kannada Marks:</label>
+            <input type="text" id="kannada" name="kannada">
+            
+            <label for="hindi">Hindi Marks:</label>
+            <input type="text" id="hindi" name="hindi">
+            
+            <label for="english">English Marks:</label>
+            <input type="text" id="english" name="english">
+            
+            <label for="maths">Maths Marks:</label>
+            <input type="text" id="maths" name="maths">
+            
+            <label for="science">Science Marks:</label>
+            <input type="text" id="science" name="science">
+            
+            <label for="social">Social Marks:</label>
+            <input type="text" id="social" name="social">
+            
+            <input type="submit" value="Submit">
+            <div class="btn-group">
+                <input type="button" value="Cancel" onclick="window.location.href='teacher.php';">
+                <input type="button" value="See Marks" onclick="window.location.href='seemarks.php';">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
