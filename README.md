@@ -1,39 +1,26 @@
-School Database Management System
-A full-stack web application designed to streamline the management of student records, faculty data, and academic scheduling. This system provides a centralized platform for administrators to perform CRUD (Create, Read, Update, Delete) operations within a secure environment.
+# School Database Management System
 
-🚀 Features
-Secure Authentication: Login system for authorized personnel.
+A robust Full-Stack School Database Management System built to handle academic records, faculty information, and administrative tasks efficiently. This project leverages a traditional LAMP-stack architecture (using XAMPP) to provide a seamless CRUD experience.
 
-Student Management: Register, update, and track student profiles and academic progress.
+## 🚀 Key Features
+* **Authentication System**: Secure login portal for administrative access.
+* **Student Record Management**: Full CRUD capabilities for managing student enrollment and profiles.
+* **Faculty Directory**: Organized database for teacher assignments and department details.
+* **Class Scheduling**: Automated tracking of course allocations and classroom usage.
+* **Network-Ready**: Configured to run over local IP addresses for multi-device access within a network.
 
-Faculty Directory: Manage teacher information and department assignments.
+## 🛠 Tech Stack
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Backend:** PHP
+* **Database:** MySQL
+* **Server:** XAMPP (Apache)
 
-Class Scheduling: Organize and view course schedules and classroom allocations.
+## 📂 Project Structure
 
-Responsive Dashboard: A clean UI built with HTML and CSS for easy navigation.
-
-🛠 Tech Stack
-Frontend: HTML5, CSS3, JavaScript
-
-Backend: PHP (Server-side logic)
-
-Database: MySQL
-
-Environment: XAMPP Server
-
-📂 Folder Structure
-Plaintext
+```text
 school_database/
 ├── config/          # Database connection (IP-based configuration)
 ├── assets/          # CSS, JS, and UI images
 ├── includes/        # Reusable components (Header/Footer)
 ├── modules/         # Business logic for Students, Teachers, and Classes
 └── public/          # Main entry pages and User Dashboard
-⚙️ Installation & Setup
-Clone the Repository: Place the project folder into your htdocs directory.
-
-Database Setup: Import the project's .sql file via phpMyAdmin.
-
-Configuration: Update config/db_config.php with your server's IP address and MySQL credentials.
-
-Launch: Access the project through your browser using the server IP (e.g., http://192.168.x.x/school_database).
