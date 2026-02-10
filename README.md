@@ -71,4 +71,9 @@ Visit your Elastic IP or Public DNS in any browser: 54.167.99.220
 * **Project Home Page**
 <img width="1365" height="767" alt="Screenshot 2026-02-10 121050" src="https://github.com/user-attachments/assets/1a2d8de1-e0e8-4773-acac-fbe412487af9" />
 
-* **Project Home Page**
+# Sample project Screenshot's
+<img width="1365" height="767" alt="Screenshot 2026-02-10 121121" src="https://github.com/user-attachments/assets/f86eea00-396f-4227-a819-6e583353623c" />
+<img width="1365" height="767" alt="Screenshot 2026-02-10 121144" src="https://github.com/user-attachments/assets/a1e3739f-5a03-4898-8238-3d46267dd6f1" />
+<img width="1365" height="540" alt="Screenshot 2026-02-10 121203" src="https://github.com/user-attachments/assets/f0b55d17-7fac-4dcf-9272-4e1ae9fa092d" />
+<img width="1365" height="418" alt="Screenshot 2026-02-10 121236" src="https://github.com/user-attachments/assets/764faea4-fca1-4621-8249-7c88bbc5c5a5" />
+<img width="1338" height="767" alt="Screenshot 2026-02-10 121305" src="https://github.com/user-attachments/assets/5a37f81e-d21d-4da3-a497-9d89e3c58292" />
